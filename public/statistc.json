@@ -1,0 +1,36 @@
+[
+    {
+      "name": "Tanvir",
+      "assignment1": 60,
+      "assignment2": 40,
+      "assignment3": 60,
+      "assignment4": 50,
+      "assignment5": 60,
+      "assignment6": 58,
+      "assignment7": 57,
+      "assignment8": 59
+    },
+    {
+        "name": "Manik",
+        "assignment1": 27,
+        "assignment2": 40,
+        "assignment3": 60,
+        "assignment4": 50,
+        "assignment5": 58,
+        "assignment6": 0,
+        "assignment7": 60,
+        "assignment8": 59
+    },
+    {
+        "name": "Nipa",
+        "assignment1": 50,
+        "assignment2": 40,
+        "assignment3": 60,
+        "assignment4": 50,
+        "assignment5": 45,
+        "assignment6": 58,
+        "assignment7": 27,
+        "assignment8": 39
+    }
+  
+  ]

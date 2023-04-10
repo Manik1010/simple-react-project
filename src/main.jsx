@@ -10,6 +10,7 @@ import BookDetails from './components/BookDetails'
 import LoadingSpinner from './components/LoadingSpinner'
 import ErrorPage from './components/ErrorPage'
 import Blog from './components/Blog'
+import Statistc from './components/Statistc'
 
 const router = createBrowserRouter([
   {
@@ -24,8 +25,9 @@ const router = createBrowserRouter([
       },
       {
         path: 'statistcs',
-        element: <Books />,
-        loader: () => fetch('https://api.itbook.store/1.0/new'),
+        element: <Statistc></Statistc>,
+        loader: () => fetch('statistc.json'),
+        
       },
       {
         path: 'book/:id',
