@@ -1,12 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 const Jobs = ({ data }) => {
 
-    console.log(data);
+    // console.log(data);
+    // console.log(data._id);
     return (
         <div>
             {/* Jobs */}
-            <div className='my-4 border-5'>
+            <div className='my-4 border-5'>  
                 <img
                     src={data.picture}
                     alt='job cover'
@@ -26,7 +28,9 @@ const Jobs = ({ data }) => {
                     <img src="./../../public/Icons/Frame.png" alt="" className='w-6 h-6'/>
                     <h5>$ Salary: {data.price}</h5>
                 </div>
-                <button className='btn md:w-auto md:mr-4'>View Diteles</button>
+                <Link to={`../job/${data._id}`}> 
+                    <button className='btn md:w-auto md:mr-4'>View Diteles</button>
+                </Link>
 
             </div>
         </div>

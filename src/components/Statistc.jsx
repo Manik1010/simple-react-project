@@ -16,11 +16,6 @@ import {
 const Statistc = () => {
     const data = useLoaderData()
     // console.log(data);
-    // return (
-    //     <div>
-    //         {/* <h1>Statistc</h1> */}
-    //     </div>
-    // );
     return (
         <div className='ml-96 mt-8'>
             <h1 className='font-bold ml-36 my-10'>Three friends Assigenment Marks</h1>

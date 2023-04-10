@@ -36,7 +36,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className='lg:ml-36 md:ml-36 sm:ml-16'>
+      <div className='lg:ml-36 md:ml-36 sm:ml-16'> 
         <h1 className='font-bold text-4xl text-center mt-4'>Job Category List</h1>
         <p className='text-center my-4'> Explore thousands of job opportunities with all the information you need. Its your future</p>
 
@@ -78,7 +78,7 @@ const Home = () => {
               <p>224 Jobs Available</p>
             </div>
           </div>
-        </div>
+        </div> 
       </div>
       <div className='lg:ml-36 md:ml-36 sm:ml-16'>
         <h1 className='font-bold text-4xl text-center mt-4'>Featured Jobs</h1>
@@ -86,7 +86,10 @@ const Home = () => {
         <div className='grid gap-8 mb-8 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1'>
         {dataSet.map(data => (
           // <Book key={book.isbn13} book={book} /> 
-          <Jobs key={data.isbn13} data={data}></Jobs>
+          <Jobs 
+            key={data._id} 
+            data={data} 
+          ></Jobs>
         ))}
           
         </div>
