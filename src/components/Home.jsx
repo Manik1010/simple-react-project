@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { useLoaderData, useNavigation } from 'react-router-dom'
 import Jobs from './Jobs'
 
-const Home = () => { 
+const Home = () => {
   const dataSet = useLoaderData()
   // console.log(dataSet);
   return (
@@ -32,15 +32,15 @@ const Home = () => {
         </div>
         <div>
           <div >
-            <img src="./../../public/All Images/P3OLGJ1 copy 1.png" alt=""/>
+            <img src="./../../public/All Images/P3OLGJ1 copy 1.png" alt="" />
           </div>
         </div>
       </div>
-      <div className='lg:ml-36 md:ml-36 sm:ml-16'> 
+      <div className='lg:ml-36 md:ml-36 sm:ml-16'>
         <h1 className='font-bold text-4xl text-center mt-4'>Job Category List</h1>
         <p className='text-center my-4'> Explore thousands of job opportunities with all the information you need. Its your future</p>
 
-        <div className="grid gap-8 lg:grid-cols- md:grid-cols-4 sm:grid-cols-2'">
+        <div className="grid gap-8 lg:grid-cols-1 md:grid-cols-4 ml-10">
           <div className=" logo_cart">
             <div>
               <img src="./../../public/Icons/accounts 1.png" alt="" />
@@ -53,7 +53,7 @@ const Home = () => {
           </div>
           <div className=" logo_cart">
             <div>
-            <img src="./../../public/Icons/business 1.png" alt="" />  
+              <img src="./../../public/Icons/business 1.png" alt="" />
             </div>
             <div className='my-4'>
               <h3 className='font-bold'>Marketing & Sales</h3>
@@ -62,7 +62,7 @@ const Home = () => {
           </div>
           <div className=" logo_cart">
             <div>
-            <img src="./../../public/Icons/Frame-1.png" alt="" />  
+              <img src="./../../public/Icons/Frame-1.png" alt="" />
             </div>
             <div className='my-4'>
               <h3 className='font-bold'>Creative Design</h3>
@@ -71,29 +71,31 @@ const Home = () => {
           </div>
           <div className=" logo_cart">
             <div>
-            <img src="./../../public/Icons/chip 1.png" alt="" />  
+              <img src="./../../public/Icons/chip 1.png" alt="" />
             </div>
             <div className='my-4'>
               <h3 className='font-bold'>Engineering Job</h3>
               <p>224 Jobs Available</p>
             </div>
           </div>
-        </div> 
+        </div>
       </div>
       <div className='lg:ml-36 md:ml-36 sm:ml-16'>
         <h1 className='font-bold text-4xl text-center mt-4'>Featured Jobs</h1>
         <p className='text-center my-4'> Explore thousands of job opportunities with all the information you need. Its your future</p>
         <div className='grid gap-8 mb-8 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1'>
-        {dataSet.map(data => (
-          // <Book key={book.isbn13} book={book} /> 
-          <Jobs 
-            key={data._id} 
-            data={data} 
-          ></Jobs>
-        ))}
+          {dataSet.map(data => (
+            // <Book key={book.isbn13} book={book} /> 
+            <Jobs
+              key={data._id}
+              data={data}
+            ></Jobs>
+          ))}
           
         </div>
-        <button className='btn my-4 ml-96'>See All</button>
+        <div className='md:ml-10'>
+          <button className='btn my-4 ml-96 md:ml-10'>See All</button>
+        </div>
       </div>
     </div>
   )
