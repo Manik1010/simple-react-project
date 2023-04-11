@@ -8,8 +8,8 @@ const Jobs = ({ data }) => {
 
     return (
         <div>
-            {/* Jobs */}
-            <div className='my-4 border-5'>
+            
+            <div className='my-4 border-2 p-8'>
                 <img
                     src={data.picture}
                     alt='job cover'

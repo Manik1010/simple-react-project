@@ -25,8 +25,10 @@ const JobDetails = () => {
     return (
         <div className='my-container'>
             {/* Container Box */}
+            <h1 className='text-2xl font-black text-center mb-16'>Job Details</h1>
             <div className='flex flex-col max-w-screen-lg overflow-hidden bg-white border rounded shadow-sm lg:flex-row sm:mx-auto'>
                 {/* Image Container */}
+     
                 <div className=' lg:w-1/2 h-full'>
                     <div className='ml-16 my-4'>
                         <p> <span className='font-semibold my-8'> Job Description:</span> {FoundData.Description}</p>

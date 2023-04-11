@@ -52,7 +52,7 @@ const Applied = () => {
     return (
         // <h>Apppp</h>
         <div className='my-container my-4'>
-            <h1 className='my-8 font-bold text-lg text-center'>Applied Jobs</h1>
+            <h1 className='text-2xl my-8 font-bold text-center'>Applied Jobs</h1>
             <div className='grid grid-cols-1 gap-4 place-items-end h-28'>
                 <div className=''>
                     <button onClick={() => handleSortCart('Remote')} type='button' className='btn mx-10'> Remote </button>
