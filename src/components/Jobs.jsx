@@ -6,28 +6,6 @@ const Jobs = ({ data }) => {
     // console.log(data);
     // console.log(data._id); 
 
-    // const handleAddToCart = id => {
-    //     console.log(id);
-    //     // let newCart = []
-    //     // const exists = cart.find(
-    //     //   existingProduct => existingProduct.id === product.id
-    //     // )
-    //     // if (!exists) {
-    //     //   product.quantity = 1
-    //     //   newCart = [...cart, product]
-    //     // } else {
-    //     //   const rest = cart.filter(
-    //     //     existingProduct => existingProduct.id !== product.id
-    //     //   )
-    //     //   exists.quantity = exists.quantity + 1
-    //     //   newCart = [...rest, exists]
-    //     // }
-
-    //     // setCart(newCart)
-    //     // addToDb(product.id)
-    //     // toast.success('Product Added! 🛒', { autoClose: 500 })
-    //   }
-
     return (
         <div>
             {/* Jobs */}

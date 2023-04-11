@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { useLoaderData, useNavigation } from 'react-router-dom'
 import Jobs from './Jobs'
 
-const Home = () => {
+const Home = () => { 
   const dataSet = useLoaderData()
   // console.log(dataSet);
   return (

@@ -12,7 +12,9 @@
       "Educational": "Bachelor degree to complete any reputational university.",
       "Experiences": "2-3 Years in this field.",
       "Phone": "01616-0000000",
-      "Email": "asd@gmail.com"
+      "Email": "asd@gmail.com",
+      "time": "Remote",
+      "anotherTime": "Full Time"
     },
     {
       "_id": "623853b2578e9e6ad1ae0dd5",
@@ -27,7 +29,9 @@
       "Educational": "Bachelor degree to complete any reputational university.",
       "Experiences": "2-3 Years in this field.",
       "Phone": "01616-0000000",
-      "Email": "asd@gmail.com"
+      "Email": "asd@gmail.com",
+      "time": "Remote",
+      "anotherTime": "Onsite"
     },
     {
       "_id": "623853b21fb149d2ee7b76c7",
@@ -42,7 +46,9 @@
       "Educational": "Bachelor degree to complete any reputational university.",
       "Experiences": "2-3 Years in this field.",
       "Phone": "01616-0000000",
-      "Email": "asd@gmail.com"
+      "Email": "asd@gmail.com",
+      "time": "Remote",
+      "anotherTime": "Full Time"
     },
     {
       "_id": "623853b2e91c8de578c9145e",
@@ -57,7 +63,9 @@
       "Educational": "Bachelor degree to complete any reputational university.",
       "Experiences": "2-3 Years in this field.",
       "Phone": "01616-0000000",
-      "Email": "asd@gmail.com"
+      "Email": "asd@gmail.com",
+      "time": "Remote",
+      "anotherTime": "Full Time"
     },
     {
       "_id": "623853b2239582e48409ccc6",
@@ -72,7 +80,9 @@
       "Educational": "Bachelor degree to complete any reputational university.",
       "Experiences": "2-3 Years in this field.",
       "Phone": "01616-0000000",
-      "Email": "asd@gmail.com"
+      "Email": "asd@gmail.com",
+      "time": "Remote",
+      "anotherTime": "Onsite"
     },
     {
       "_id": "623853b2cdda0d5bc294f791",
@@ -87,7 +97,9 @@
       "Educational": "Bachelor degree to complete any reputational university.",
       "Experiences": "2-3 Years in this field.",
       "Phone": "01616-0000000",
-      "Email": "asd@gmail.com"
+      "Email": "asd@gmail.com",
+      "time": "Remote",
+      "anotherTime": "Full Time"
     },
     {
       "_id": "1",
@@ -102,7 +114,9 @@
       "Educational": "Bachelor degree to complete any reputational university.",
       "Experiences": "2-3 Years in this field.",
       "Phone": "01616-0000000",
-      "Email": "asd@gmail.com"
+      "Email": "asd@gmail.com",
+      "time": "Remote",
+      "anotherTime": "Full Time"
     },
     {
       "_id": "623853b2614ad5aba311fdf1",
@@ -117,6 +131,8 @@
       "Educational": "Bachelor degree to complete any reputational university.",
       "Experiences": "2-3 Years in this field.",
       "Phone": "01616-0000000",
-      "Email": "asd@gmail.com"
+      "Email": "asd@gmail.com",
+      "time": "Remote",
+      "anotherTime": "Full Time"
     }
   ]
