@@ -4,11 +4,34 @@ import { Link } from 'react-router-dom'
 const Jobs = ({ data }) => {
 
     // console.log(data);
-    // console.log(data._id);
+    // console.log(data._id); 
+
+    // const handleAddToCart = id => {
+    //     console.log(id);
+    //     // let newCart = []
+    //     // const exists = cart.find(
+    //     //   existingProduct => existingProduct.id === product.id
+    //     // )
+    //     // if (!exists) {
+    //     //   product.quantity = 1
+    //     //   newCart = [...cart, product]
+    //     // } else {
+    //     //   const rest = cart.filter(
+    //     //     existingProduct => existingProduct.id !== product.id
+    //     //   )
+    //     //   exists.quantity = exists.quantity + 1
+    //     //   newCart = [...rest, exists]
+    //     // }
+
+    //     // setCart(newCart)
+    //     // addToDb(product.id)
+    //     // toast.success('Product Added! 🛒', { autoClose: 500 })
+    //   }
+
     return (
         <div>
             {/* Jobs */}
-            <div className='my-4 border-5'>  
+            <div className='my-4 border-5'>
                 <img
                     src={data.picture}
                     alt='job cover'
@@ -17,18 +40,18 @@ const Jobs = ({ data }) => {
                 <h1 className='font-bold'>{data.name}</h1>
                 <h3 className='my-2'>{data.title}</h3>
                 <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded my-2">
-                    Button
+                    Remote
                 </button>
                 <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded mx-4 my-2">
-                    Button 2
+                    Full Time
                 </button>
                 <div className='flex flex-row my-4 gap-2'>
-                    <img src="./../../public/Icons/Location Icon.png" alt="" className='w-8 h-8'/>
+                    <img src="./../../public/Icons/Location Icon.png" alt="" className='w-8 h-8' />
                     <p>{data.addrese}</p>
-                    <img src="./../../public/Icons/Frame.png" alt="" className='w-6 h-6'/>
+                    <img src="./../../public/Icons/Frame.png" alt="" className='w-6 h-6' />
                     <h5>$ Salary: {data.price}</h5>
                 </div>
-                <Link to={`../job/${data._id}`}> 
+                <Link to={`../job/${data._id}`}>
                     <button className='btn md:w-auto md:mr-4'>View Diteles</button>
                 </Link>
 

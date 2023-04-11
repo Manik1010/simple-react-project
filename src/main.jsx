@@ -9,6 +9,7 @@ import ErrorPage from './components/ErrorPage'
 import Blog from './components/Blog'
 import Statistc from './components/Statistc'
 import JobDetails from './components/JobDetails'
+import Applied from './components/Applied'
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,11 @@ const router = createBrowserRouter([
         element: <JobDetails></JobDetails>,
         loader: () => fetch('datas.json'),
         // loader: ({ params }) => fetch(`https://api.itbook.store/1.0/books/${params.id}`),
+      },
+      {
+        path: 'applied',
+        element: <Applied></Applied>
+
       },
 
       {

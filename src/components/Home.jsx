@@ -23,7 +23,7 @@ const Home = () => {
             </p>
           </div>
           <div className='flex flex-col items-center md:flex-row'>
-            <Link to='/books' className='btn md:w-auto md:mr-4'>
+            <Link to='/' className='btn md:w-auto md:mr-4'>
               <div className='inline-flex items-center justify-center w-full h-full'>
                 <p className='mr-3'>Get Started</p>
               </div>
