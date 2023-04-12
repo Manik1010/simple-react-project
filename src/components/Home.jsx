@@ -112,8 +112,8 @@ const Home = () => {
           }
 
         </div>
-        <div className='md:ml-96'>
-          <button onClick={() => handleAllData()} className='btn ml-8 sm:ml-12'>See All</button>
+        <div className='md:ml-96 '>
+          <button onClick={() => handleAllData()} className='btn d-none ml-8 sm:ml-12'>See All</button>
         </div>
       </div>
     </div>

@@ -24,13 +24,9 @@ import AllApply from './AllApply';
 const Applied = () => {
     // const cartData = localStorage.getItem('job-cart');
     let cart = [];
-
     const savecart = getStoredCart()
     // console.log(savecart);
     const dataSet = useLoaderData()
-    // console.log(dataSet);
-    // const [appliedJob, setAppliedJob] = useState(0);
-
     for (const id in savecart) {
         const FoundJob = dataSet.find(job => job._id === id);
         // console.log(FoundJob);
@@ -39,9 +35,7 @@ const Applied = () => {
         }
     }
     // console.log(cart);
-
-    // console.log(cart);
-    const [appliedJob, setAppliedJob] = useState(0);
+    const [appliedJob, setAppliedJob] = useState(cart);
 
     const viewOnsiteJobs = () => {
         const onsiteJobs = cart.filter(job => job.time == 'Onsite');
@@ -67,7 +61,7 @@ const Applied = () => {
                 </div>
             </div>
             {
-                cart.map(cartInfo => (
+                appliedJob.map(cartInfo => (
                     <AllApply
                         key={cartInfo._id}
                         cartInfo={cartInfo}
