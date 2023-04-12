@@ -59,11 +59,19 @@ const Header = () => {
               </NavLink>
             </li>
           </ul>
-        </div>
-        <div>
-          <button>Add</button>
-        </div>
 
+          {/* <button className='btn'>Star Applying</button> */}
+            
+
+        </div>
+        <div className=''>
+            <button className='btn lm:hidden'>Star Applying</button>
+            {/* <button className='btn md:hidden'>Star Applying</button> */}
+            {/* <button className='btn md:hidden sm:hidden'>Star Applying</button> */}
+          </div>
+        
+
+        
         {/* Mobile Navbar Section */}
         <div className='lg:hidden'>
           {/* Dropdown Open Button */}
@@ -136,7 +144,9 @@ const Header = () => {
                     </li>
                   </ul>
                 </nav>
-                <button>Add</button>
+                <div className='sm:mt-1'>
+                  <button className='btn'>Star Applying</button>
+                </div>
               </div>
               {/* <button>Add</button> */}
             </div>
