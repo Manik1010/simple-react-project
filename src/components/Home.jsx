@@ -1,11 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useLoaderData, useNavigation } from 'react-router-dom'
 import Jobs from './Jobs'
 
 const Home = () => {
-  const dataSet = useLoaderData()
-  // console.log(dataSet);
+  let dataSet = useLoaderData()
+
+
+  // console.log(dataSet);\
+  const [count, setCount] = useState(4)
+
+  dataSet = dataSet.slice(0, count);
+  
+  // console.log(sliced);
+  // console.log(dataSet)
+
+
+  const handleAllData = () => {
+    const x = 8;
+    setCount(x)
+    dataSet = dataSet.slice(0, count);
+    console.log("Allha")
+  }
   return (
 
     // <h>Home</h>
@@ -40,7 +56,7 @@ const Home = () => {
         <h1 className='font-bold text-4xl text-center mt-4'>Job Category List</h1>
         <p className='text-center my-4'> Explore thousands of job opportunities with all the information you need. Its your future</p>
 
-        <div className="grid gap-8 lg:grid-cols-1 md:grid-cols-4 ml-10">
+        <div className="grid gap-8 lg:grid-cols-4 md:grid-cols-1 ml-10">
           <div className=" logo_cart">
             <div>
               <img src="./../../public/Icons/accounts 1.png" alt="" />
@@ -84,17 +100,20 @@ const Home = () => {
         <h1 className='font-bold text-4xl text-center mt-4'>Featured Jobs</h1>
         <p className='text-center my-4'> Explore thousands of job opportunities with all the information you need. Its your future</p>
         <div className='grid gap-8 mb-8 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1'>
-          {dataSet.map(data => (
-            // <Book key={book.isbn13} book={book} /> 
-            <Jobs
-              key={data._id}
-              data={data}
-            ></Jobs>
-          ))}
-          
+          {
+            dataSet.map(data => (
+              // <Book key={book.isbn13} book={book} /> 
+
+              <Jobs
+                key={data._id}
+                data={data}
+              ></Jobs>
+            ))
+          }
+
         </div>
         <div className='md:ml-10'>
-          <button className='btn my-4 ml-96 md:ml-10'>See All</button>
+          <button onClick={() => handleAllData()} className='btn my-4 ml-96 md:ml-10'>See All</button>
         </div>
       </div>
     </div>

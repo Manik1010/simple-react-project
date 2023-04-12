@@ -18,10 +18,10 @@ const Jobs = ({ data }) => {
                 <h1 className='font-bold'>{data.name}</h1>
                 <h3 className='my-2'>{data.title}</h3>
                 <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded my-2">
-                    Remote
+                {data.time}
                 </button>
                 <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded mx-4 my-2">
-                    Full Time
+                {data.anotherTime}
                 </button>
                 <div className='flex flex-row my-4 gap-2'>
                     <img src="./../../public/Icons/Location Icon.png" alt="" className='w-8 h-8' />

@@ -4,7 +4,7 @@ import {
   BoltIcon,
   Bars3BottomRightIcon,
   XMarkIcon,
-} from '@heroicons/react/24/solid' 
+} from '@heroicons/react/24/solid'
 
 const Header = () => {
 
@@ -30,7 +30,7 @@ const Header = () => {
                 className={({ isActive }) => (isActive ? 'text-blue-600' : 'default')}
               >
                 Home
-              </NavLink> 
+              </NavLink>
             </li>
             <li>
               <NavLink
@@ -118,20 +118,21 @@ const Header = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        to='/jobs'
-                        className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400'
+                      <NavLink
+                        to='/applied'
+                        className={({ isActive }) => (isActive ? 'active' : 'default')}
                       >
                         Applied Job
-                      </Link>
+                      </NavLink>
                     </li>
                     <li>
-                      <Link
-                        to='/about'
-                        className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400'
+                      <NavLink
+                        to='/blog'
+                        className={({ isActive }) => (isActive ? 'active' : 'default')}
+                      // className={({ isActive }) => (isActive ? 'text-blue-600' : 'default')}
                       >
                         Blog
-                      </Link>
+                      </NavLink>
                     </li>
                   </ul>
                 </nav>
