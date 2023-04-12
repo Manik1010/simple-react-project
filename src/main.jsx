@@ -10,17 +10,21 @@ import Blog from './components/Blog'
 import Statistc from './components/Statistc'
 import JobDetails from './components/JobDetails'
 import Applied from './components/Applied'
+// import { productsAndCartData } from './loaders/getCart&ProductsData'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
     errorElement: <ErrorPage />,   
+    // loader: productsAndCartData,
     children: [
       {
         path: '/',
         element: <Home></Home>,
         loader: () => fetch('datas.json'),
+        // loader: productsAndCartData,
+        // loader: () => fetch('jobLists.json'),
       },
       {
         path: 'statistcs',
